@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吳振愷 | 聯合大學文創系 個人作品集</title>
+    <!-- 引入 Google 襯線字體，提升文創美學質感 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* 大地色系與低飽和度色彩配置 */
+            --bg-color: #fcfbf9;
+            --text-main: #2c2c2a;
+            --text-muted: #8b8a85;
+            --accent-color: #d4a373; /* 莫蘭迪暖杏色 */
+            --border-color: #e6e4df;
+        }
+
+        body {
+            font-family: 'Noto Serif TC', serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.8;
+            letter-spacing: 0.05em;
+        }
+
+        a { text-decoration: none; color: inherit; transition: color 0.3s ease; }
+        a:hover { color: var(--accent-color); }
+
+        /* 簡約導覽列 */
+        header {
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .logo { font-size: 1.2rem; font-weight: 700; letter-spacing: 0.1em; }
+        nav a { margin-left: 2rem; font-size: 0.9rem; font-weight: 400; }
+
+        /* 英雄區塊：大面積留白與詩意排版 */
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            color: var(--text-muted);
+            max-width: 600px;
+            font-size: 1.1rem;
+        }
+        .tag {
+            display: inline-block;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        /* 區塊通用設定 */
+        .section { padding: 5rem 5%; max-width: 1200px; margin: 0 auto; }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 3rem;
+            display: flex;
+            align-items: center;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: var(--border-color);
+            margin-left: 1rem;
+        }
+
+        /* 畫廊風格網格 (專為圖像與企劃展示設計) */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+        .card {
+            position: relative;
+            group: hover;
+        }
+        .card-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background-color: #eae8e1;
+            transition: transform 0.5s ease;
+        }
+        .image-wrapper {
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+        .card:hover .card-image { transform: scale(1.03); }
+        .card h3 { font-size: 1.2rem; margin: 0.5rem 0; font-weight: 700; }
+        .card p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem; }
+        .card-category { font-size: 0.8rem; color: var(--accent-color); }
+
+        /* 聯絡資訊區 */
+        .footer {
+            text-align: center;
+            padding: 4rem 20px;
+            background-color: #f4f2ec;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">WU ZHEN-KAI</div>
+        <nav>
+            <a href="#about">關於</a>
+            <a href="#works">作品</a>
+            <a href="#contact">聯絡</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>探索文化與設計的交集</h1>
+        <p>你好，我是吳振愷。來自國立聯合大學文創系，專注於策展企劃、視覺設計與工藝實作。我將理念轉化為視覺，用設計說好每一個故事。</p>
+        <div class="tag">#視覺設計 #策展企劃 #品牌行銷</div>
+    </section>
+
+    <section id="works" class="section">
+        <h2 class="section-title">精選作品 Selected Works</h2>
+        <div class="gallery">
+            <!-- 作品 1：策展企劃 -->
+            <a href="#" class="card">
+                <div class="image-wrapper">
+                    <!-- 這裡可以使用真實作品照片，目前用灰色佔位圖替代 -->
+                    <img src="https://picsum.photos/600/400?random=1" alt="策展企劃" class="card-image">
+                </div>
+                <div class="card-category">展覽企劃 Exhibition</div>
+                <h3>[大三] 地方創生策展企劃</h3>
+                <p>探討在地文化符號的轉譯，結合實體展場動線設計與視覺識別，重新包裝在地小農品牌。</p>
+            </a>
+
+            <!-- 作品 2：視覺設計 -->
+            <a href="#" class="card">
+                <div class="image-wrapper">
+                    <img src="https://picsum.photos/600/400?random=2" alt="視覺設計" class="card-image">
+                </div>
+                <div class="card-category">視覺設計 Visual Design</div>
+                <h3>[大二] 品牌識別系統重塑</h3>
+                <p>為虛擬文創品牌制定色彩計畫、Logo 設計與周邊商品 Mockup 模擬，建立完整的品牌規範。</p>
+            </a>
+
+            <!-- 作品 3：工藝與實作 -->
+            <a href="#" class="card">
+                <div class="image-wrapper">
+                    <img src="https://picsum.photos/600/400?random=3" alt="工藝設計" class="card-image">
+                </div>
+                <div class="card-category">工藝實作 Craftsmanship</div>
+                <h3>[大一/大二] 複合媒材創作</h3>
+                <p>結合木作與金工技術，探討材質本身的語彙，將傳統工藝技法應用於現代生活器皿設計。</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="section" style="max-width: 800px; text-align: center;">
+        <h2 class="section-title" style="justify-content: center;">關於我 About Me</h2>
+        <p>在聯合大學文創系的學習過程中，我致力於將無形的文化底蘊轉化為有形的設計載體。無論是透過文字企劃、平面視覺還是實體工藝，我相信好的設計源自於對生活的細膩觀察。</p>
+        <p style="margin-top: 2rem;"><strong>軟體技能 Software Skills</strong></p>
+        <p style="color: var(--text-muted);">Adobe Illustrator / Photoshop / InDesign / Figma</p>
+    </section>
+
+    <footer id="contact" class="footer">
+        <p>Let's create something together.</p>
+        <p style="margin: 1rem 0;"><a href="mailto:your.email@example.com" style="font-size: 1.2rem; color: var(--text-main); border-bottom: 1px solid var(--text-main);">your.email@example.com</a></p>
+        <p>&copy; 2026 吳振愷. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
